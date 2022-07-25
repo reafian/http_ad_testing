@@ -15,8 +15,8 @@ type configuration struct {
 }
 
 func main() {
-    var config string = "/Users/richard/Desktop/go/build/conf.json"
-    var macs string = "/Users/richard/Desktop/go/build/mac_list"
+    var config string = "conf.json"
+    var macs string = "mac_list"
     prefix, suffix := fixes(config)
 
     maclist, err := os.Open(macs)
